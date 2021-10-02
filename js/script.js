@@ -251,3 +251,12 @@ function printCategoria(rows, categoria) {
 		}
 	}
 }
+
+function menu() {
+	var elementoNav = document.getElementById("nav").style.display
+	if (elementoNav == "block") {
+		document.getElementById("nav").style.display = "none"
+	} else {
+		document.getElementById("nav").style.display = "block"
+	}
+}
