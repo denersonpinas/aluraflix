@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body onload="InitialLoad()">
+        <nav class="navbar">
+            <h1 class="navbar-title">Aluraflix</h1>
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">CATEGORIA</a></li>
+                <li><a href="#">CADASTRO ANIME</a></li>
+            </ul>
+            <div class="pesquisa">
+                <input type="search" name="apesquisa" id="apesquisa">
+                <button type="submit">PESQUISAR</button>
+            </div>
+        </nav>
+        <section class="principal">
+            <div class="infor-film">
+                <span>AÇÃO</span>
+                <h1>TOKYO REVENGERS</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim corporis qui quibusdam itaque libero quaerat rerum eos eligendi consequuntur sequi minima quis temporibus quae sapiente, earum repudiandae fuga eaque. Placeat!
+                </p>
+                <ul>
+                    <li><span>Elenco:</span> Loren, Loren, Loren</li>
+                    <li><span>Gênero:</span> Loren, Loren, Loren</li>
+                    <li><span>Tag:</span> Loren, Loren, Loren</li>
+                </ul>
+            </div>
+            <div class="trailer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZUzQQAZZqO4" poster="https://www.ixpap.com/images/2021/07/tokyo-revengers-wallpaper-ixpap-6.jpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="page-categorias">
+            <div class="categoria">
+            </div>
+        </section>
+        <section class="page-form">
+            <div class="form delet">
+                <form name="formularioDelAnime" action="#" method="post">
+                    <legend>Exclusão de Animes</legend>
+                    <label for="ititle">Titulo do anime: </label><input type="text" name="ititle" id="ititle" placeholder="Digite o nome do anime">
+                    <button type="button" onclick="deletandoAnime()">DELETAR</button>
+                    <p id="resultadoDelet"></p>
+                </form>
+            </div>
+            <div class="form">
+                <form name="formularioCadAnime" action="#" method="post">
+                    <legend>Cadastro de Animes</legend>
+                    <label for="iimg">Link da imagem: </label><input type="url" name="iimg" id="iimg" placeholder="digite o endereço da imagem...">
+                    <label for="ititle">Titulo do anime: </label><input type="text" name="ititle" id="ititle" placeholder="Digite o nome do anime">
+                    <label for="icategoria">Categoria:</label>
+                    <select name="icategoria" id="icategoria">
+                        <option value="aventura">Aventura</option>
+                        <option value="ação">Ação</option>
+                        <option value="terro">Terror</option>
+                        <option value="romance">Romance</option>
+                        <option value="esporte">Esporte</option>
+                        <option value="fantasia">Fantasia</option>
+                        <option value="game">Game</option>
+                    </select>
+                    <button type="button" onclick="cadastroAnime()">CADASTRAR</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <h1 class="page-title">
+                Aluraflix
+            </h1>
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" class="page-logo" alt=""><br>
+            <hr class="linha">
+            <p> Desenvolvido por <b>Dênerson Pinas</b></p>
+        </footer>
+    </body>
+    <script src="js/script.js"></script>
+</html>
